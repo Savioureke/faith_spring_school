@@ -59,7 +59,7 @@ const ReceiptModal = ({ receipt, onClose }) => {
           <div className="grid grid-cols-2 gap-4 text-xs mb-6 bg-slate-50 p-4 rounded-xl border border-slate-100">
             <div>
               <span className="text-slate-400 uppercase font-semibold text-[10px] block">Receipt Number</span>
-              <span className="font-mono font-bold text-slate-800 text-sm">{receipt.receipt_number || 'EAF-REC-2025-XXXX'}</span>
+              <span className="font-mono font-bold text-slate-800 text-sm">{receipt.receipt_number || 'FSS-REC-2025-XXXX'}</span>
             </div>
             <div className="text-right">
               <span className="text-slate-400 uppercase font-semibold text-[10px] block">Date Issued</span>
@@ -73,7 +73,7 @@ const ReceiptModal = ({ receipt, onClose }) => {
             </div>
             <div className="text-right">
               <span className="text-slate-400 uppercase font-semibold text-[10px] block">Admission Number</span>
-              <span className="font-mono font-bold text-brand-blue">{receipt.admission_number || 'EAF/2025/XXX'}</span>
+              <span className="font-mono font-bold text-brand-blue">{receipt.admission_number || 'FSS/2025/XXX'}</span>
             </div>
           </div>
 
@@ -105,7 +105,7 @@ const ReceiptModal = ({ receipt, onClose }) => {
           <div className="border-t-2 border-slate-200 pt-4 flex justify-between items-center text-xs">
             <div className="space-y-1">
               <div className="text-slate-500">
-                <span className="font-semibold">Transaction Ref:</span> <span className="font-mono text-[11px]">{receipt.payment_reference || 'REF-EAF-XXXX'}</span>
+                <span className="font-semibold">Transaction Ref:</span> <span className="font-mono text-[11px]">{receipt.payment_reference || 'REF-FSS-XXXX'}</span>
               </div>
               <div className="text-slate-500">
                 <span className="font-semibold">Remaining Balance:</span>{' '}
@@ -119,7 +119,7 @@ const ReceiptModal = ({ receipt, onClose }) => {
               <div className="text-[10px] text-slate-400 uppercase font-bold">Authorized Stamp</div>
               <div className="mt-1 inline-flex items-center space-x-1 border-2 border-emerald-600 text-emerald-700 font-black text-[11px] px-2.5 py-1 rounded tracking-widest uppercase transform -rotate-3">
                 <CheckCircle size={12} />
-                <span>EAF BURSARY • PAID</span>
+                <span>FSS BURSARY • PAID</span>
               </div>
             </div>
           </div>

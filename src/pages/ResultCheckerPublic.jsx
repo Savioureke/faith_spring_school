@@ -10,8 +10,8 @@ import ReportCardModal from '../components/ReportCardModal';
 
 const ResultCheckerPublic = () => {
   const { school } = useSchool();
-  const [admissionNumber, setAdmissionNumber] = useState('EAF/2025/001');
-  const [pinCode, setPinCode] = useState('EAF-8492-4910-1823');
+  const [admissionNumber, setAdmissionNumber] = useState('FSS/2025/001');
+  const [pinCode, setPinCode] = useState('FSS-8492-4910-1823');
   const [verifying, setVerifying] = useState(false);
   const [reportData, setReportData] = useState(null);
   const [error, setError] = useState(null);
@@ -54,7 +54,7 @@ const ResultCheckerPublic = () => {
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 rounded-xl bg-brand-navy text-brand-amber flex items-center justify-center font-black text-xl shadow-md">
-              E
+              F
             </div>
             <div>
               <div className="font-extrabold text-sm text-brand-navy tracking-wider uppercase">
@@ -104,7 +104,7 @@ const ResultCheckerPublic = () => {
               <input
                 type="text"
                 required
-                placeholder="e.g. EAF/2025/001"
+                placeholder="e.g. FSS/2025/001"
                 value={admissionNumber}
                 onChange={(e) => setAdmissionNumber(e.target.value)}
                 className="w-full p-3.5 border border-slate-200 rounded-xl font-mono font-bold text-brand-blue text-sm uppercase focus:ring-2 focus:ring-brand-blue"
@@ -118,7 +118,7 @@ const ResultCheckerPublic = () => {
               <input
                 type="text"
                 required
-                placeholder="e.g. EAF-8492-4910-1823"
+                placeholder="e.g. FSS-8492-4910-1823"
                 value={pinCode}
                 onChange={(e) => setPinCode(e.target.value)}
                 className="w-full p-3.5 border border-slate-200 rounded-xl font-mono font-bold text-slate-900 tracking-wider text-sm focus:ring-2 focus:ring-brand-blue"
@@ -163,7 +163,7 @@ const ResultCheckerPublic = () => {
 
       {/* Footer */}
       <footer className="py-6 text-center text-xs text-slate-400 border-t bg-white">
-        © {new Date().getFullYear()} {school.name}, Bokkos, Plateau State, Nigeria. All rights reserved.
+        © {new Date().getFullYear()} {school.name}, Calabar, Cross River State, Nigeria. All rights reserved.
       </footer>
 
       {/* Printable Modal */}

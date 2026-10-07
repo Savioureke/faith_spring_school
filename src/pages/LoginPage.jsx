@@ -45,7 +45,7 @@ const LoginPage = () => {
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center">
         <Link to="/" className="inline-flex items-center space-x-3 mb-4">
           <div className="w-14 h-14 rounded-2xl bg-brand-navy text-brand-amber flex items-center justify-center font-black text-2xl shadow-xl shadow-brand-navy/20 border-2 border-brand-amber">
-            E
+            F
           </div>
         </Link>
         <div className="inline-flex items-center space-x-1.5 px-3 py-1 bg-blue-50 border border-blue-200 rounded-full text-brand-blue text-xs font-bold uppercase tracking-wider mb-2">
@@ -56,7 +56,7 @@ const LoginPage = () => {
           {school.name}
         </h2>
         <p className="text-xs text-slate-500 mt-1">
-          Bokkos, Plateau State • Terminal Results, CBT Exams & School Fees
+          Calabar, Cross River State • Terminal Results, CBT Exams & School Fees
         </p>
       </div>
 
@@ -65,7 +65,7 @@ const LoginPage = () => {
           <div className="border-b border-slate-100 pb-3">
             <h3 className="font-bold text-slate-900 text-sm">Pupil / Guardian Sign In</h3>
             <p className="text-xs text-slate-500 mt-0.5">
-              Enter your Student Admission Number (e.g. <span className="font-mono text-brand-blue font-semibold">EAF/2025/001</span>) or registered parent email address.
+              Enter your Student Admission Number (e.g. <span className="font-mono text-brand-blue font-semibold">FSS/2025/001</span>) or registered parent email address.
             </p>
           </div>
 
@@ -79,7 +79,7 @@ const LoginPage = () => {
                 <input
                   type="text"
                   required
-                  placeholder="e.g. EAF/2025/001 or parent@gmail.com"
+                  placeholder="e.g. FSS/2025/001 or parent@gmail.com"
                   value={identifier}
                   onChange={(e) => setIdentifier(e.target.value)}
                   className="w-full pl-10 pr-4 py-2.5 border border-slate-200 rounded-xl text-slate-900 text-xs font-medium focus:ring-2 focus:ring-brand-blue"

@@ -25,7 +25,7 @@ const PaystackCheckoutModal = ({ invoice, student, onSuccess, onClose }) => {
     setLoading(true);
     setError(null);
 
-    const ref = `pstk_eaf_${Date.now()}_${Math.floor(Math.random() * 10000)}`;
+    const ref = `pstk_fss_${Date.now()}_${Math.floor(Math.random() * 10000)}`;
 
     try {
       // Step 1: Call Server-Side Supabase Edge Function to verify and record payment

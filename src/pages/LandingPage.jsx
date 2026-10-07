@@ -20,7 +20,7 @@ const LandingPage = () => {
               Now Enrolling
             </span>
             <span className="text-slate-200 font-medium">
-              2026/2027 Academic Session • First Term Active in Bokkos, Plateau State
+              2026/2027 Academic Session • First Term Active in Calabar, Cross River State
             </span>
           </div>
           <div className="flex items-center space-x-4 text-[11px] text-slate-300">
@@ -43,14 +43,14 @@ const LandingPage = () => {
           {/* Brand Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-11 h-11 rounded-2xl bg-brand-navy text-brand-amber flex items-center justify-center font-black text-2xl border-2 border-brand-amber shadow-md">
-              E
+              F
             </div>
             <div>
               <div className="font-extrabold text-base sm:text-lg tracking-wider text-brand-navy uppercase">
                 {school.name}
               </div>
               <div className="text-[10px] sm:text-[11px] text-brand-blue font-semibold tracking-wide">
-                Bokkos, Plateau State • Primary School
+                Calabar, Cross River State • Primary School
               </div>
             </div>
           </Link>
@@ -129,13 +129,13 @@ const LandingPage = () => {
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-brand-navy tracking-tight leading-tight">
                 Nurturing Excellence, Character & Knowledge in{' '}
                 <span className="text-brand-blue relative inline-block">
-                  Plateau State
+                  Calabar
                   <img src="/img/banner-line.png" alt="line" className="absolute -bottom-2 left-0 w-full" />
                 </span>
               </h1>
 
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0">
-                A premier primary school in Bokkos, Plateau State providing state-of-the-art digital education management: automated online Paystack fee payments, scratch-card PIN result checker, CBT computer testing, and real-time attendance registers.
+                A premier primary school in Calabar, Cross River State providing state-of-the-art digital education management: automated online Paystack fee payments, scratch-card PIN result checker, CBT computer testing, and real-time attendance registers.
               </p>
 
               {/* Single Login Button */}
@@ -266,7 +266,7 @@ const LandingPage = () => {
               Academic Offerings
             </span>
             <h2 className="text-2xl sm:text-3xl font-black text-brand-navy mt-1">
-              Standard Primary Curriculum in Bokkos
+              Standard Primary Curriculum in Calabar
             </h2>
             <p className="text-slate-500 text-xs mt-2">
               Comprehensive subjects approved for Primary 1 through Primary 6 and Early Childhood Development.
@@ -281,7 +281,7 @@ const LandingPage = () => {
               { code: 'NVSS', title: 'National Values', desc: 'Social & Civic Studies' },
               { code: 'CRS', title: 'Christian Studies', desc: 'Biblical Knowledge' },
               { code: 'HAU', title: 'Hausa Language', desc: 'Language & Culture' },
-              { code: 'AGR', title: 'Agricultural Science', desc: 'Plateau Farming' },
+              { code: 'AGR', title: 'Agricultural Science', desc: 'Practical Farming' },
               { code: 'ICT', title: 'Computer Studies', desc: 'Digital Literacy' },
               { code: 'QTR', title: 'Quantitative Reasoning', desc: 'Pattern Logic' },
               { code: 'VBR', title: 'Verbal Reasoning', desc: 'Word Associations' },
@@ -303,12 +303,12 @@ const LandingPage = () => {
             <div>
               <div className="flex items-center space-x-2 mb-3">
                 <div className="w-8 h-8 rounded-lg bg-brand-amber text-brand-navy flex items-center justify-center font-bold text-lg">
-                  E
+                  F
                 </div>
                 <span className="font-black text-base">{school.name}</span>
               </div>
               <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
-                "{school.motto}". Providing premier primary school education and holistic character development in Plateau State, Nigeria.
+                "{school.motto}". Providing premier primary school education and holistic character development in Calabar, Cross River State, Nigeria.
               </p>
             </div>
 
@@ -342,7 +342,7 @@ const LandingPage = () => {
 
           <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-slate-400 text-[11px] gap-2">
             <div>
-              © {new Date().getFullYear()} {school.name}, Bokkos LGA, Plateau State, Nigeria. All rights reserved.
+              © {new Date().getFullYear()} {school.name}, Calabar, Cross River State, Nigeria. All rights reserved.
             </div>
             <div className="text-slate-500">
               Official School Management Portal

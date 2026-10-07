@@ -49,7 +49,7 @@ const AdminLayout = () => {
         <div className="p-5 border-b border-white/10 flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 rounded-xl bg-brand-blue flex items-center justify-center text-white font-black text-xl shadow-lg shadow-brand-blue/30">
-              E
+              F
             </div>
             <div>
               <div className="font-extrabold text-sm tracking-wider uppercase text-white">Faith Spring School</div>
@@ -128,7 +128,7 @@ const AdminLayout = () => {
               <Menu size={22} />
             </button>
             <div className="flex items-center space-x-2 text-xs font-medium text-slate-500">
-              <span>Bokkos, Plateau State</span>
+              <span>Calabar, Cross River State</span>
               <ChevronRight size={14} />
               <span className="text-slate-800 font-semibold">{school.name}</span>
             </div>

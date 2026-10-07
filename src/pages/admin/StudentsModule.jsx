@@ -29,8 +29,8 @@ const StudentsModule = () => {
     class_id: '',
     blood_group: 'O+',
     genotype: 'AA',
-    state_of_origin: 'Plateau',
-    lga: 'Bokkos',
+    state_of_origin: 'Cross River',
+    lga: 'Calabar Municipal',
     home_address: '',
     medical_conditions: '',
     guardian_name: '',
@@ -84,7 +84,7 @@ const StudentsModule = () => {
     const year = new Date().getFullYear();
     const nextSeq = String(students.length + 1).padStart(3, '0');
     setFormData({
-      admission_number: `EAF/${year}/${nextSeq}`,
+      admission_number: `FSS/${year}/${nextSeq}`,
       first_name: '',
       last_name: '',
       other_names: '',
@@ -93,8 +93,8 @@ const StudentsModule = () => {
       class_id: classes[0]?.id || '',
       blood_group: 'O+',
       genotype: 'AA',
-      state_of_origin: 'Plateau',
-      lga: 'Bokkos',
+      state_of_origin: 'Cross River',
+      lga: 'Calabar Municipal',
       home_address: '',
       medical_conditions: '',
       guardian_name: '',
@@ -121,8 +121,8 @@ const StudentsModule = () => {
       class_id: student.class_id || '',
       blood_group: student.blood_group || 'O+',
       genotype: student.genotype || 'AA',
-      state_of_origin: student.state_of_origin || 'Plateau',
-      lga: student.lga || 'Bokkos',
+      state_of_origin: student.state_of_origin || 'Cross River',
+      lga: student.lga || 'Calabar Municipal',
       home_address: student.home_address || '',
       medical_conditions: student.medical_conditions || '',
       guardian_name: primaryG?.full_name || '',
@@ -142,7 +142,7 @@ const StudentsModule = () => {
 
     const year = new Date().getFullYear();
     const nextSeq = String(students.length + 1).padStart(3, '0');
-    const admission_number = (formData.admission_number || '').trim() || `EAF/${year}/${nextSeq}`;
+    const admission_number = (formData.admission_number || '').trim() || `FSS/${year}/${nextSeq}`;
     const portalPassword = (formData.portal_password || '').trim() || 'password123';
 
     try {
@@ -658,7 +658,7 @@ const StudentsModule = () => {
                 <label className="block text-slate-700 font-bold mb-1">Residential Address</label>
                 <input
                   type="text"
-                  placeholder="e.g. Fwangnin Village, Bokkos"
+                  placeholder="e.g. Marian Road, Calabar"
                   value={formData.home_address}
                   onChange={(e) => setFormData({ ...formData, home_address: e.target.value })}
                   className="w-full p-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-brand-blue"
@@ -737,7 +737,7 @@ const StudentsModule = () => {
                     <input
                       type="text"
                       required
-                      placeholder="e.g. EAF/2026/001"
+                      placeholder="e.g. FSS/2026/001"
                       value={formData.admission_number}
                       onChange={(e) => setFormData({ ...formData, admission_number: e.target.value })}
                       className="w-full p-2.5 border border-slate-300 rounded-xl text-sm font-semibold tracking-wide bg-white focus:ring-2 focus:ring-brand-blue"

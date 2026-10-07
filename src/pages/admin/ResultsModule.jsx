@@ -74,11 +74,11 @@ const ResultsModule = () => {
       const currentCount = pins.length;
 
       for (let i = 1; i <= count; i++) {
-        // Format: EAF-XXXX-XXXX-XXXX
+        // Format: FSS-XXXX-XXXX-XXXX
         const randPart1 = Math.floor(1000 + Math.random() * 9000);
         const randPart2 = Math.floor(1000 + Math.random() * 9000);
         const randPart3 = Math.floor(1000 + Math.random() * 9000);
-        const pin_code = `EAF-${randPart1}-${randPart2}-${randPart3}`;
+        const pin_code = `FSS-${randPart1}-${randPart2}-${randPart3}`;
         const serial_number = `SN-${new Date().getFullYear()}-${String(currentCount + i).padStart(4, '0')}`;
 
         newPins.push({

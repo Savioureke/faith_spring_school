@@ -153,7 +153,7 @@ const TeachersModule = () => {
         if (error) throw error;
         showToast('Teacher record updated with portal credentials');
       } else {
-        const staff_id = `EAF/T/${String(teachers.length + 1).padStart(3, '0')}`;
+        const staff_id = `FSS/T/${String(teachers.length + 1).padStart(3, '0')}`;
         const { error } = await supabase
           .from('teachers')
           .insert({

@@ -10,8 +10,8 @@ const StudentResults = () => {
   const { showToast } = useSchool();
 
   const studentAdmission = isParent ? activeWard?.admission_number : user?.admission_number;
-  const [admissionNumber, setAdmissionNumber] = useState(studentAdmission || 'EAF/2025/001');
-  const [pinCode, setPinCode] = useState('EAF-8492-4910-1823');
+  const [admissionNumber, setAdmissionNumber] = useState(studentAdmission || 'FSS/2025/001');
+  const [pinCode, setPinCode] = useState('FSS-8492-4910-1823');
   const [verifying, setVerifying] = useState(false);
   const [reportData, setReportData] = useState(null);
   const [error, setError] = useState(null);
@@ -75,7 +75,7 @@ const StudentResults = () => {
             <input
               type="text"
               required
-              placeholder="e.g. EAF/2025/001"
+              placeholder="e.g. FSS/2025/001"
               value={admissionNumber}
               onChange={(e) => setAdmissionNumber(e.target.value)}
               className="w-full p-3 border border-slate-200 rounded-xl font-mono font-bold text-brand-blue uppercase text-sm focus:ring-2 focus:ring-brand-blue"
@@ -87,13 +87,13 @@ const StudentResults = () => {
             <input
               type="text"
               required
-              placeholder="e.g. EAF-8492-4910-1823"
+              placeholder="e.g. FSS-8492-4910-1823"
               value={pinCode}
               onChange={(e) => setPinCode(e.target.value)}
               className="w-full p-3 border border-slate-200 rounded-xl font-mono font-bold text-slate-900 tracking-wider text-sm focus:ring-2 focus:ring-brand-blue"
             />
             <span className="text-[10px] text-slate-400 mt-1 block">
-              Format: EAF-XXXX-XXXX-XXXX (Default demo PIN loaded above)
+              Format: FSS-XXXX-XXXX-XXXX (Default demo PIN loaded above)
             </span>
           </div>
 

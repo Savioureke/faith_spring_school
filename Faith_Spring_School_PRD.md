@@ -2,7 +2,7 @@
 ## Faith Spring School — School Management Portal
 
 **School:** Faith Spring School
-**Location:** Bokkos, Plateau State, Nigeria
+**Location:** Calabar, Cross River State, Nigeria
 **School Type:** Primary School
 **Document Owner:** Saviour (Technical Lead / Project Owner)
 **Prepared For:** Antigravity (AI build agent)
@@ -49,7 +49,7 @@ The system replaces manual/paper-based processes (attendance registers, paper re
 - Give **admins** full control over school data: students, staff, classes, subjects, fees, timetables, exams, and system-wide reporting.
 - Give **teachers** tools to manage their classes: mark attendance, set/grade exams, upload e-learning content, log communications with parents, and view their timetable.
 - Give **students/parents** self-service access: check results via PIN, view timetable, pay fees online, access e-learning materials, take CBT exams, and view communication logs.
-- Ensure the system works reliably on low-bandwidth connections typical of Bokkos, Plateau State, since this is a primary school context where parents may use basic smartphones.
+- Ensure the system works reliably on low-bandwidth connections typical of Calabar, Cross River State, since this is a primary school context where parents may use basic smartphones.
 - Ensure financial operations (fee payment) are secure, auditable, and produce automatic receipts.
 
 ## 3. Core Feature Modules (As Requested)
@@ -118,13 +118,13 @@ These are not explicitly listed by Saviour but are standard, necessary parts of 
 5. **Class & Subject curriculum mapping** — which subjects are compulsory per class/level (primary schools have a fixed core curriculum), so timetable/exam creation is guided rather than freeform.
 6. **Grading scale / report card configuration** — admin-configurable grading bands (e.g. A=80-100, etc.), and comment banks for teacher/head-teacher remarks.
 7. **Academic Calendar / Term management** — define terms/sessions (e.g. 2025/2026 First Term), with start/end dates; all modules (fees, exams, attendance, timetable) are scoped to a term.
-8. **Notifications** — at minimum email notifications (via Supabase + an email provider) for: fee payment confirmation, new result available, new communication log entry, leave request status change. SMS is a stretch goal worth flagging to Saviour given many parents in Bokkos may rely on SMS/USSD more than email.
+8. **Notifications** — at minimum email notifications (via Supabase + an email provider) for: fee payment confirmation, new result available, new communication log entry, leave request status change. SMS is a stretch goal worth flagging to Saviour given many parents in Calabar may rely on SMS/USSD more than email.
 9. **Admin dashboard/analytics** — at-a-glance stats: total students, fee collection rate, attendance rate today, upcoming exams, recent communications.
 10. **Audit logging** — track who changed what (especially for fee/result edits) for accountability.
 11. **Data backup/export** — admin ability to export core data (students, results, fee ledger) as CSV/Excel for offline record-keeping, since this is a real institution's system of record.
 12. **Bulk import** — CSV upload for initial bulk-adding of existing students/teachers rather than one-by-one entry, given this will onboard an existing school population.
 13. **Mobile responsiveness** — since parents will very likely access this primarily from phones, not desktops; this should be treated as a primary constraint, not an afterthought.
-14. **Basic offline/low-bandwidth tolerance** — lightweight pages, image compression on upload (photos, e-learning materials), given typical connectivity in Bokkos.
+14. **Basic offline/low-bandwidth tolerance** — lightweight pages, image compression on upload (photos, e-learning materials), given typical connectivity in Calabar.
 
 Antigravity should flag any of these it believes are out of scope or should be deprioritized, rather than silently dropping them.
 

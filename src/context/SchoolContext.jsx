@@ -6,9 +6,9 @@ const SchoolContext = createContext(null);
 export const SchoolProvider = ({ children }) => {
   const [school, setSchool] = useState({
     name: 'Faith Spring School',
-    code: 'EAF',
+    code: 'FSS',
     motto: 'Excellence, Character and Knowledge',
-    address: 'Fwangnin Village, Bokkos LGA, Plateau State, Nigeria',
+    address: 'Calabar, Cross River State, Nigeria',
     phone: '+234 803 456 7890',
     email: 'admin@faithspringschool.sch.ng',
     logo_url: '/img/logo.png',
@@ -61,7 +61,7 @@ export const SchoolProvider = ({ children }) => {
       if (termsData) setAllTerms(termsData);
 
       // Determine active session & term from localStorage or database is_current
-      const savedTermId = localStorage.getItem('eaf_scoped_term_id');
+      const savedTermId = localStorage.getItem('fss_scoped_term_id');
       let targetTerm = null;
 
       if (savedTermId && termsData) {
@@ -92,7 +92,7 @@ export const SchoolProvider = ({ children }) => {
     const foundTerm = allTerms.find(t => t.id === termId);
     if (foundTerm) {
       setActiveTerm(foundTerm);
-      localStorage.setItem('eaf_scoped_term_id', termId);
+      localStorage.setItem('fss_scoped_term_id', termId);
       const parentSession = allSessions.find(s => s.id === foundTerm.session_id);
       if (parentSession) setActiveSession(parentSession);
       showToast(`Switched active portal view to: ${parentSession?.name || ''} ${foundTerm.name}`);

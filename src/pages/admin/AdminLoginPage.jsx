@@ -39,7 +39,7 @@ const AdminLoginPage = () => {
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center relative z-10">
         <Link to="/" className="inline-flex items-center space-x-3 mb-4">
           <div className="w-16 h-16 rounded-2xl bg-brand-navy text-brand-amber flex items-center justify-center font-black text-2xl shadow-2xl border-2 border-brand-amber">
-            E
+            F
           </div>
         </Link>
         <div className="inline-flex items-center space-x-1.5 px-3 py-1 bg-amber-500/10 border border-amber-500/30 rounded-full text-amber-400 text-xs font-bold uppercase tracking-wider mb-2">
@@ -50,7 +50,7 @@ const AdminLoginPage = () => {
           Administrator Console
         </h2>
         <p className="text-xs text-slate-400 mt-1">
-          {school.name} • Bokkos, Plateau State
+          {school.name} • Calabar, Cross River State
         </p>
       </div>
 

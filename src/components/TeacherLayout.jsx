@@ -42,7 +42,7 @@ const TeacherLayout = () => {
         <div className="p-5 border-b border-slate-800 flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 rounded-xl bg-brand-blue flex items-center justify-center text-white font-black text-xl shadow-lg shadow-brand-blue/30">
-              E
+              F
             </div>
             <div>
               <div className="font-extrabold text-sm tracking-wider uppercase text-white">Faith Spring School</div>

@@ -28,13 +28,13 @@ export const DEMO_USERS = {
     full_name: 'Dr. Mahanan Gofwen',
     phone: '+234 803 700 8899',
     wards: [
-      { id: '304bf2eb-d0be-4153-80c8-84c179ee06fb', admission_number: 'EAF/2025/001', name: 'David Mahanan Gofwen', class_name: 'Primary 1 Gold' }
+      { id: '304bf2eb-d0be-4153-80c8-84c179ee06fb', admission_number: 'FSS/2025/001', name: 'David Mahanan Gofwen', class_name: 'Primary 1 Gold' }
     ]
   },
   student: {
     id: 'demo-student-001',
     student_id: '304bf2eb-d0be-4153-80c8-84c179ee06fb',
-    admission_number: 'EAF/2025/001',
+    admission_number: 'FSS/2025/001',
     email: 'david.gofwen@student.faithspringschool.ng',
     role: 'student',
     full_name: 'David Mahanan Gofwen',
@@ -45,28 +45,28 @@ export const DEMO_USERS = {
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(() => {
-    const saved = localStorage.getItem('eaf_current_user');
+    const saved = localStorage.getItem('fss_current_user');
     return saved ? JSON.parse(saved) : null;
   });
 
   const [activeWard, setActiveWard] = useState(() => {
-    const saved = localStorage.getItem('eaf_active_ward');
+    const saved = localStorage.getItem('fss_active_ward');
     return saved ? JSON.parse(saved) : null;
   });
 
   useEffect(() => {
     if (user) {
-      localStorage.setItem('eaf_current_user', JSON.stringify(user));
+      localStorage.setItem('fss_current_user', JSON.stringify(user));
     } else {
-      localStorage.removeItem('eaf_current_user');
+      localStorage.removeItem('fss_current_user');
     }
   }, [user]);
 
   useEffect(() => {
     if (activeWard) {
-      localStorage.setItem('eaf_active_ward', JSON.stringify(activeWard));
+      localStorage.setItem('fss_active_ward', JSON.stringify(activeWard));
     } else {
-      localStorage.removeItem('eaf_active_ward');
+      localStorage.removeItem('fss_active_ward');
     }
   }, [activeWard]);
 
@@ -246,7 +246,8 @@ export const AuthProvider = ({ children }) => {
 
   const logout = () => {
     setUser(null);
-    localStorage.removeItem('eaf_current_user');
+    localStorage.removeItem('fss_current_user');
+    localStorage.removeItem('fss_active_ward');
   };
 
   return (

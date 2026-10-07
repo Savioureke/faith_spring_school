@@ -43,7 +43,7 @@ const StudentLayout = () => {
         <div className="p-5 border-b border-white/10 flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 rounded-xl bg-brand-amber text-brand-navy flex items-center justify-center font-black text-xl shadow-lg shadow-brand-amber/30">
-              E
+              F
             </div>
             <div>
               <div className="font-extrabold text-sm tracking-wider uppercase text-white">Faith Spring School</div>
