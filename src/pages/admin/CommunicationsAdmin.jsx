@@ -82,7 +82,7 @@ const CommunicationsAdmin = () => {
           recipientPhone: selectedStudent?.phone || '08034567890',
           recipientName: selectedStudent ? `${selectedStudent.first_name} ${selectedStudent.last_name}'s Parent` : 'Parent',
           eventType: 'COMMUNICATION_LOG',
-          message: `Eden Academy Notice: New ${category} message regarding ${selectedStudent?.first_name || 'Pupil'}: "${subject}". Please check your portal for details.`,
+          message: `Faith Spring School Notice: New ${category} message regarding ${selectedStudent?.first_name || 'Pupil'}: "${subject}". Please check your portal for details.`,
           referenceId: targetStudentId,
         });
       } catch (smsErr) {

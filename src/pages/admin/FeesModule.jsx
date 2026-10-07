@@ -134,7 +134,7 @@ const FeesModule = () => {
           recipientPhone: selectedInvoiceForPayment.students?.phone || '08034567890',
           recipientName: `${selectedInvoiceForPayment.students?.first_name || ''} ${selectedInvoiceForPayment.students?.last_name || ''}`.trim() || 'Parent',
           eventType: 'FEE_PAYMENT',
-          message: `Eden Academy: Payment of ₦${Number(manualAmount).toLocaleString()} recorded for ${selectedInvoiceForPayment.students?.first_name || 'Pupil'} (${selectedInvoiceForPayment.invoice_number}). Channel: ${manualChannel.toUpperCase()}. Ref: ${ref}`,
+          message: `Faith Spring School: Payment of ₦${Number(manualAmount).toLocaleString()} recorded for ${selectedInvoiceForPayment.students?.first_name || 'Pupil'} (${selectedInvoiceForPayment.invoice_number}). Channel: ${manualChannel.toUpperCase()}. Ref: ${ref}`,
           referenceId: ref,
         });
       } catch (smsErr) {
@@ -196,7 +196,7 @@ const FeesModule = () => {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute('download', `Eden_Academy_Outstanding_Fees_${new Date().toISOString().split('T')[0]}.csv`);
+    link.setAttribute('download', `Faith_Spring_School_Outstanding_Fees_${new Date().toISOString().split('T')[0]}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

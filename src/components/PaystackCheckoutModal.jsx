@@ -65,7 +65,7 @@ const PaystackCheckoutModal = ({ invoice, student, onSuccess, onClose }) => {
           p_paystack_ref: ref,
           p_channel: 'paystack',
           p_metadata: {
-            customer_email: student?.email || 'parent@edenacademy.ng',
+            customer_email: student?.email || 'parent@faithspringschool.ng',
             payment_channel: channel,
             verified: true,
             gateway: 'Paystack Secured'
@@ -83,7 +83,7 @@ const PaystackCheckoutModal = ({ invoice, student, onSuccess, onClose }) => {
             recipientPhone: student?.phone || student?.guardian_phone || '08034567890',
             recipientName: student?.full_name || `${student?.first_name} ${student?.last_name}`,
             eventType: 'FEE_PAYMENT',
-            message: `Eden Academy: Payment of ₦${Number(payAmount).toLocaleString()} received for ${student?.first_name || 'Pupil'} (${invoice.invoice_number}). Outstanding balance: ₦${Math.max(0, invoice.balance - payAmount).toLocaleString()}. Ref: ${ref}`,
+            message: `Faith Spring School: Payment of ₦${Number(payAmount).toLocaleString()} received for ${student?.first_name || 'Pupil'} (${invoice.invoice_number}). Outstanding balance: ₦${Math.max(0, invoice.balance - payAmount).toLocaleString()}. Ref: ${ref}`,
             referenceId: ref,
           });
         } catch (smsErr) {
@@ -118,7 +118,7 @@ const PaystackCheckoutModal = ({ invoice, student, onSuccess, onClose }) => {
             </div>
             <div>
               <h2 className="font-bold text-sm">Paystack Secure Checkout</h2>
-              <p className="text-[11px] text-slate-300">Eden Academy Fwangnin Bursary</p>
+              <p className="text-[11px] text-slate-300">Faith Spring School Bursary</p>
             </div>
           </div>
           <button onClick={onClose} className="p-1 rounded-lg hover:bg-white/10 text-slate-300">

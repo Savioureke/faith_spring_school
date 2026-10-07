@@ -209,7 +209,7 @@ const StudentsModule = () => {
         }
 
         // Sync pupil auth user
-        const studentEmail = editingStudent.email || `${formData.first_name.toLowerCase().replace(/[^a-z0-9]/g, '')}.${formData.last_name.toLowerCase().replace(/[^a-z0-9]/g, '')}@student.edenacademy.ng`;
+        const studentEmail = editingStudent.email || `${formData.first_name.toLowerCase().replace(/[^a-z0-9]/g, '')}.${formData.last_name.toLowerCase().replace(/[^a-z0-9]/g, '')}@student.faithspringschool.ng`;
         try {
           await supabase.rpc('register_portal_user', {
             p_email: studentEmail,
@@ -239,7 +239,7 @@ const StudentsModule = () => {
 
         showToast(`Pupil record updated! Login ID: ${admission_number}`);
       } else {
-        const studentEmail = `${formData.first_name.toLowerCase().replace(/[^a-z0-9]/g, '')}.${formData.last_name.toLowerCase().replace(/[^a-z0-9]/g, '')}@student.edenacademy.ng`;
+        const studentEmail = `${formData.first_name.toLowerCase().replace(/[^a-z0-9]/g, '')}.${formData.last_name.toLowerCase().replace(/[^a-z0-9]/g, '')}@student.faithspringschool.ng`;
 
         // 1. Insert student
         const { data: newStudent, error: sErr } = await supabase
@@ -356,7 +356,7 @@ const StudentsModule = () => {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute('download', `Eden_Academy_Students_${new Date().toISOString().split('T')[0]}.csv`);
+    link.setAttribute('download', `Faith_Spring_School_Students_${new Date().toISOString().split('T')[0]}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

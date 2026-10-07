@@ -35,7 +35,7 @@ export const sendSmsNotification = async ({
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             to: formattedPhone,
-            from: 'EdenAcademy',
+            from: 'FaithSpring',
             sms: message,
             type: 'plain',
             channel: 'generic',

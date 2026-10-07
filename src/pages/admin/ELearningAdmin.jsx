@@ -63,7 +63,7 @@ const ELearningAdmin = () => {
         description: resDesc,
         week_number: Number(resWeek),
         resource_type: resType,
-        file_url: resUrl || 'https://edenacademyfwangnin.sch.ng/materials/sample.pdf'
+        file_url: resUrl || 'https://faithspringschool.sch.ng/materials/sample.pdf'
       });
 
       if (error) throw error;

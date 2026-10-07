@@ -116,8 +116,8 @@ const TeachersModule = () => {
     if (!teacherEmail) {
       const nameParts = formData.full_name.trim().toLowerCase().replace(/[^a-z0-9 ]/g, '').split(' ').filter(Boolean);
       teacherEmail = nameParts.length >= 2 
-        ? `${nameParts[0]}.${nameParts[nameParts.length - 1]}@edenacademyfwangnin.sch.ng`
-        : `teacher.${Date.now().toString().slice(-4)}@edenacademyfwangnin.sch.ng`;
+        ? `${nameParts[0]}.${nameParts[nameParts.length - 1]}@faithspringschool.sch.ng`
+        : `teacher.${Date.now().toString().slice(-4)}@faithspringschool.sch.ng`;
     }
 
     try {
@@ -442,7 +442,7 @@ const TeachersModule = () => {
                   <label className="block text-slate-700 font-bold mb-1">Email Address</label>
                   <input
                     type="email"
-                    placeholder="teacher@edenacademy.ng"
+                    placeholder="teacher@faithspringschool.ng"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full p-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-brand-blue"

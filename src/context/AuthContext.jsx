@@ -6,7 +6,7 @@ const AuthContext = createContext(null);
 export const DEMO_USERS = {
   admin: {
     id: 'demo-admin-001',
-    email: 'admin@edenacademyfwangnin.sch.ng',
+    email: 'admin@faithspringschool.sch.ng',
     role: 'admin',
     full_name: 'Saviour Admin (Lead)',
     phone: '+234 803 456 7890',
@@ -14,7 +14,7 @@ export const DEMO_USERS = {
   teacher: {
     id: 'demo-teacher-001',
     teacher_id: 'eaf-teacher-001',
-    email: 'pam.gyang@edenacademyfwangnin.sch.ng',
+    email: 'pam.gyang@faithspringschool.sch.ng',
     role: 'teacher',
     full_name: 'Mr. Dung Pam Gyang',
     phone: '+234 803 111 2233',
@@ -35,7 +35,7 @@ export const DEMO_USERS = {
     id: 'demo-student-001',
     student_id: '304bf2eb-d0be-4153-80c8-84c179ee06fb',
     admission_number: 'EAF/2025/001',
-    email: 'david.gofwen@student.edenacademy.ng',
+    email: 'david.gofwen@student.faithspringschool.ng',
     role: 'student',
     full_name: 'David Mahanan Gofwen',
     class_name: 'Primary 1 Gold',
@@ -129,7 +129,7 @@ export const AuthProvider = ({ children }) => {
             id: studentData.id,
             student_id: studentData.id,
             admission_number: studentData.admission_number,
-            email: studentData.email || `${studentData.first_name.toLowerCase()}@student.edenacademy.ng`,
+            email: studentData.email || `${studentData.first_name.toLowerCase()}@student.faithspringschool.ng`,
             role: 'student',
             full_name: `${studentData.first_name} ${studentData.last_name}`,
             class_name: studentData.classes?.name ? `${studentData.classes.name} ${studentData.classes.arm || ''}` : 'Primary 1 Gold',
@@ -188,7 +188,7 @@ export const AuthProvider = ({ children }) => {
       // 4. Check if Admin
       const lower = identifier.toLowerCase();
       if (
-        lower === 'admin@edenacademyfwangnin.sch.ng' || 
+        lower === 'admin@faithspringschool.sch.ng' || 
         lower === 'admin' ||
         (roleHint === 'admin' && (lower.includes('admin') || lower === 'saviour'))
       ) {

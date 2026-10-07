@@ -52,7 +52,7 @@ const AdminLayout = () => {
               E
             </div>
             <div>
-              <div className="font-extrabold text-sm tracking-wider uppercase text-white">Eden Academy</div>
+              <div className="font-extrabold text-sm tracking-wider uppercase text-white">Faith Spring School</div>
               <div className="text-[11px] text-amber-400 font-semibold tracking-wide">Admin Portal</div>
             </div>
           </Link>
@@ -103,7 +103,7 @@ const AdminLayout = () => {
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-semibold truncate text-white">{user?.full_name || 'Administrator'}</p>
-              <p className="text-xs text-slate-400 truncate">{user?.email || 'admin@edenacademy.ng'}</p>
+              <p className="text-xs text-slate-400 truncate">{user?.email || 'admin@faithspringschool.ng'}</p>
             </div>
           </div>
           <button

@@ -1,7 +1,7 @@
 # Product Requirements Document (PRD)
-## Eden Academy Fwangnin — School Management Portal
+## Faith Spring School — School Management Portal
 
-**School:** Eden Academy Fwangnin
+**School:** Faith Spring School
 **Location:** Bokkos, Plateau State, Nigeria
 **School Type:** Primary School
 **Document Owner:** Saviour (Technical Lead / Project Owner)
@@ -14,7 +14,7 @@
 
 You are building this system end-to-end. Follow these directives exactly:
 
-1. **Backend:** Use Supabase. A Supabase project named **"Eden Academy Fwangnin"** already exists — it is accessible to you via your Supabase MCP connection. Use that existing project; do not create a new one. Build out the schema, auth, storage, Row Level Security (RLS) policies, edge functions, and any scheduled jobs inside it.
+1. **Backend:** Use Supabase. A Supabase project named **"Faith Spring School"** already exists — it is accessible to you via your Supabase MCP connection. Use that existing project; do not create a new one. Build out the schema, auth, storage, Row Level Security (RLS) policies, edge functions, and any scheduled jobs inside it.
 2. **Frontend:** React + Tailwind CSS. A UI has already been provided/designed for this project. Use it as the visual foundation.
    - If the provided UI is **not already** React/Tailwind (e.g. it's static HTML, Figma, or another framework), **convert it to React + Tailwind** — do not discard it and start from a generic template. Preserve its layout, components, and visual identity as closely as possible.
    - Where the provided UI is missing screens for features in this PRD, design new screens that **match the existing UI's design system** (colors, typography, spacing, component style) rather than introducing a new look.
@@ -40,7 +40,7 @@ You are building this system end-to-end. Follow these directives exactly:
 
 ## 1. Overview & Purpose
 
-Eden Academy Fwangnin needs a single, unified digital school management system covering the full academic and administrative lifecycle: student and staff records, class/subject structuring, timetabling, attendance, fee collection, examinations (including computer-based testing), e-learning content delivery, result publishing via a PIN-based checker, and structured communication between parents and teachers.
+Faith Spring School needs a single, unified digital school management system covering the full academic and administrative lifecycle: student and staff records, class/subject structuring, timetabling, attendance, fee collection, examinations (including computer-based testing), e-learning content delivery, result publishing via a PIN-based checker, and structured communication between parents and teachers.
 
 The system replaces manual/paper-based processes (attendance registers, paper report cards, physical fee receipts, notice boards) with a role-based web portal usable by school administrators, teachers, and students/parents.
 

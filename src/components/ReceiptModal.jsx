@@ -126,7 +126,7 @@ const ReceiptModal = ({ receipt, onClose }) => {
 
           {/* Footer note */}
           <div className="mt-8 pt-4 border-t border-dashed border-slate-200 text-center text-[10px] text-slate-400">
-            This is an official computer-generated receipt from Eden Academy Fwangnin School Management Portal. No signature required.
+            This is an official computer-generated receipt from Faith Spring School Management Portal. No signature required.
           </div>
         </div>
       </div>

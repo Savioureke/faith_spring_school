@@ -88,7 +88,7 @@ const LandingPage = () => {
         {mobileMenuOpen && (
           <div className="lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 text-sm font-bold shadow-xl">
             <a href="#home" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-slate-800">Home</a>
-            <a href="#about" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-slate-800">About Eden Academy</a>
+            <a href="#about" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-slate-800">About Faith Spring School</a>
             <a href="#curriculum" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-slate-800">Curriculum</a>
             <a href="#features" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-slate-800">Portal Features</a>
             <div className="pt-3 border-t">
@@ -123,7 +123,7 @@ const LandingPage = () => {
             {/* Left Copy */}
             <div className="space-y-6 text-center lg:text-left">
               <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200 text-brand-blue px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide">
-                <span>Welcome to Eden Academy Fwangnin</span>
+                <span>Welcome to Faith Spring School</span>
               </div>
 
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-brand-navy tracking-tight leading-tight">
@@ -172,7 +172,7 @@ const LandingPage = () => {
               <div className="relative w-full max-w-lg">
                 <img
                   src="/img/banner-img.png"
-                  alt="Eden Academy Pupil"
+                  alt="Faith Spring School Pupil"
                   className="w-full h-auto drop-shadow-2xl relative z-10"
                 />
 

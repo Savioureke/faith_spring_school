@@ -5,12 +5,12 @@ const SchoolContext = createContext(null);
 
 export const SchoolProvider = ({ children }) => {
   const [school, setSchool] = useState({
-    name: 'Eden Academy Fwangnin',
+    name: 'Faith Spring School',
     code: 'EAF',
     motto: 'Excellence, Character and Knowledge',
     address: 'Fwangnin Village, Bokkos LGA, Plateau State, Nigeria',
     phone: '+234 803 456 7890',
-    email: 'admin@edenacademyfwangnin.sch.ng',
+    email: 'admin@faithspringschool.sch.ng',
     logo_url: '/img/logo.png',
   });
 
